@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ac2dia
+    provider: github
+    repository: spring-boot-http-gradle
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ac2dia-spring-boot-http-gradle
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/ac2dia/spring-boot-http-gradle.git
+  org: ac2dia
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-http-gradle
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/ac2dia/spring-boot-http-gradle
